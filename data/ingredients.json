@@ -1,0 +1,128 @@
+{
+  "wrap": [
+    {
+      "id": 1,
+      "name": "lettuce",
+      "img": "/images/cabbage.png"
+    },
+    {
+      "id": 2,
+      "name": "tortilla",
+      "img": "/images/tortilla.png"
+    },
+    {
+      "id": 3,
+      "name": "tomato",
+      "img": "/images/Tomato.png"
+    },
+    {
+      "id": 4,
+      "name": "chicken",
+      "img": "/images/chickenraw.png"
+    },
+    {
+      "id": 5,
+      "name": "fish meat",
+      "img": "/images/fishmeat.png"
+    },
+    {
+      "id": 6,
+      "name": "egg",
+      "img": "/images/sunnyegg.png"
+    },
+    {
+      "id": 7,
+      "name": "salami",
+      "img": "/images/salameat.png"
+    }
+  ],
+  "breakfast": [
+    {
+      "id": 1,
+      "name": "egg",
+      "img": "/images/sunnyegg.png"
+    },
+    {
+      "id": 2,
+      "name": "bread",
+      "img": "/images/bread.png"
+    },
+    {
+      "id": 3,
+      "name": "fish meat",
+      "img": "/images/fishmeat.png"
+    },
+    {
+      "id": 4,
+      "name": "cheese",
+      "img": "/images/cheese.png"
+    },
+    {
+      "id": 5,
+      "name": "salami",
+      "img": "/images/salameat.png"
+    }
+  ],
+  "sides": [
+    {
+      "id": 1,
+      "img": "/images/onlinefood.png"
+    },
+    {
+      "id": 2,
+      "img": "https://img.freepik.com/premium-photo/tortilla-bread-style-8k-hd-photography_1033957-32573.jpg?w=740"
+    }
+  ],
+  "sandwich": [
+    {
+      "id": 1,
+      "name": "egg",
+      "img": "/images/sunnyegg.png"
+    },
+    {
+      "id": 2,
+      "name": "bread",
+      "img": "/images/bread.png"
+    },
+    {
+      "id": 3,
+      "name": "fish meat",
+      "img": "/images/fishmeat.png"
+    },
+    {
+      "id": 4,
+      "name": "cheese",
+      "img": "/images/cheese.png"
+    },
+    {
+      "id": 5,
+      "name": "salami",
+      "img": "/images/salameat.png"
+    },
+    {
+      "id": 6,
+      "name": "tomato",
+      "img": "/images/Tomato.png"
+    },
+    {
+      "id": 7,
+      "name": "cucumber",
+      "img": "/images/Cucumber.png"
+    },
+    {
+      "id": 8,
+      "name": "beef meat",
+      "img": "/images/beef.png"
+    },
+    {
+      "id": 9,
+      "name": "chicken meat",
+      "img": "/images/chickenraw.png"
+    },
+    {
+      "id": 10,
+      "name": "lettuce",
+      "img": "/images/cabbage.png"
+    }
+  ]
+}

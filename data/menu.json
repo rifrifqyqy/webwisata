@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "Cola",
+    "description": "A delightfully crunchy combination of garden veggies.",
+    "category": "drink",
+    "price": 5.99,
+    "image": "/images/subwaycola.png"
+  },
+  {
+    "id": 2,
+    "title": "Coffe Latte 8OZ",
+    "description": "A Coffe Latte",
+    "category": "drink",
+    "price": 6.99,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/coffee-1-680x680.png"
+  },
+  {
+    "id": 3,
+    "title": "Spiva Water 500ml",
+    "description": "Just a Mineral waters",
+    "category": "drink",
+    "price": 7.49,
+    "image": "/images/mineralwater.png"
+  },
+  {
+    "id": 4,
+    "title": "Breadballs Marinara",
+    "description": "Terjunlah ke kenikmatan yang tak terbantahkan dengan Ultimate Cheese Steak kami. Daging sapi panggang yang lembut dan juicy disajikan dengan potongan bawang dan paprika yang digoreng sempurna, semuanya dilumuri oleh lapisan tebal keju cheddar dan mozzarella yang melumer. Setiap gigitan adalah perpaduan sempurna dari rasa gurih dan lembut, membuat setiap orang kembali meminta lebih.",
+    "category": "sandwich",
+    "price": 6.49,
+    "image": "https://www.subway.com.my/images/menu/Meatball-Marinara.webp"
+  },
+  {
+    "id": 5,
+    "title": "Chicken Teriyaki",
+    "description": "Irresistible teriyaki glazed chicken strips.",
+    "category": "salad",
+    "price": 7.99,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/BBQ-Chicken-Salad-680x680.png"
+  },
+  {
+    "id": 6,
+    "title": "Steak & Cheese",
+    "description": "Inspired by the hoagie that made Philadelphia famous, our version of the Cheese Steak features mouth-watering slices of lean and tender steak with sautéed onions and green peppers topped with melted cheese. Its served hot with your choice of fresh vegetables and condiments on freshly baked bread.",
+    "category": "sandwich",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/steakandcheese.webp"
+  },
+  {
+    "id": 7,
+    "title": "Chicken Slice",
+    "description": "With succulent slices of Chicken ham, you can't beat this favorite. Especially as it's got under 6 grams of fat.",
+    "category": "sandwich",
+    "price": 7.99,
+    "image": "https://www.subway.com.my/images/menu/chicken-slice.webp"
+  },
+  {
+    "id": 8,
+    "title": "Spicy Italian",
+    "description": "Spice up your life with some real flavor. Served on freshly baked bread and toasted to perfection, the Spicy Italian sandwich features spicy pepperoni and delicious slices of salami. For a more personalized taste, add fresh peppers, oil, vinegar or anything else to suit your liking.",
+    "category": "sandwich",
+    "price": 6.99,
+    "image": "https://www.subway.com.my/images/menu/SpicyItalianv2.webp"
+  },
+  {
+    "id": 9,
+    "title": "Chicken Slices",
+    "description": "A classic sandwich with pepperoni, salami, and ham.",
+    "price": 7.99,
+    "category": "wrap",
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Untitled-design-35-680x680.png"
+  },
+  {
+    "id": 10,
+    "title": "Chicken Fish Wrap",
+    "category": "wrap",
+    "description": "Oven-roasted turkey breast with your choice of fresh veggies.",
+    "price": 6.99,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/captain-fish-wrap.png"
+  },
+  {
+    "id": 11,
+    "title": "Chicken Teriyaki Wrap",
+    "description": "A delight for veggie lovers with fresh vegetables and your choice of condiments.",
+    "category": "wrap",
+    "price": 5.99,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/BBQ-Chicken-Wrap-680x680.png"
+  },
+  {
+    "id": 12,
+    "title": "Egg Mayo",
+    "description": "Tender chicken strips in a savory teriyaki glaze.",
+    "category": "wrap",
+    "price": 8.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Egg-Mayo-Wrap-1-680x680.png"
+  },
+  {
+    "id": 13,
+    "title": "Spicy Italian",
+    "category": "wrap",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Spicy-Italian-Wrap-680x680.png"
+  },
+  {
+    "id": 14,
+    "title": "Italian B.M.T. Wrap",
+    "category": "wrap",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/wrap-web.png"
+  },
+  {
+    "id": 15,
+    "title": "Roat Chicken Wrap",
+    "category": "wrap",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Untitled-design-31-680x680.png"
+  },
+  {
+    "id": 16,
+    "title": "Steak and Chees",
+    "category": "wrap",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Untitled-design-33-680x680.png"
+  },
+  {
+    "id": 17,
+    "title": "Tuna Mayo",
+    "category": "wrap",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Untitled-design-32-680x680.png"
+  },
+  {
+    "id": 18,
+    "title": "Cheese & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Cheese-Egg-680x680.png"
+  },
+  {
+    "id": 19,
+    "title": "Tuna & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Tuna-Egg-680x680.png"
+  },
+  {
+    "id": 21,
+    "title": "Chicken Slice & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Chicken-Ham-Egg-680x680.png"
+  },
+  {
+    "id": 22,
+    "title": "Breakfast Strips & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Breakfast-Strip-Egg-680x680.png"
+  },
+  {
+    "id": 23,
+    "title": "Oatmeal Raisin Cookies",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/png-transparent-oatmeal-raisin-cookies-chocolate-chip-cookie-peanut-butter-cookie-schmackary-s-baking-biscuit-680x680.png"
+  },
+  {
+    "id": 24,
+    "title": "Chocolate Chips Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-chocolatechipcookie_PR_PR-1-680x680.png"
+  },
+  {
+    "id": 25,
+    "title": "Double Chocolate Chips Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-doublechocolatechipcookie-1-680x680.png"
+  },
+  {
+    "id": 26,
+    "title": "White Chip Macadamia Nut Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-whitechipmacadamianutcookie-1-680x680.png"
+  },
+  {
+    "id": 27,
+    "title": "Chicken Slice & Cheese",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Chicken-Ham-_-Cheese-Toastie-680x680.png"
+  },
+  {
+    "id": 28,
+    "title": "Egg Mayo Toasty",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/09/Egg-Mayo-Toastie-680x680.png"
+  },
+  {
+    "id": 29,
+    "title": "Mushroom Soup",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/mushroom-soup-680x680.png"
+  },
+  {
+    "id": 30,
+    "title": "Chicken Cream Soup",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/mushroom-soup-680x680.png"
+  },
+  {
+    "id": 31,
+    "title": "Subway Baked Waffle Fries",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2023/08/Waffle-Fries.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Subway Mac & Cheese",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/04/Mac-Cheese.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Veggie Delight Sandwich",
+    "category": "sandwich",
+    "description": "A delightfully crunchy fresh combination of garden fresh lettuce, tomatoes, green peppers, onions, olives and pickles and your choice of condiments served on freshly baked bread. It’s like a salad sandwich.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Veggie-Delight.webp"
+  },
+  {
+    "id": 34,
+    "title": "Roast Beef",
+    "category": "sandwich",
+    "description": "A classic favorite, comprises of lean and tender sliced roast beef with your choice of fresh vegetables and condiments served on freshly baked bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Roast-Beef.webp"
+  },
+  {
+    "id": 35,
+    "title": "Italian B.M.T.",
+    "category": "sandwich",
+    "description": "An old world favourite sandwich that is made up of beef salami, beef pepperoni and chicken ham. Some say B.M.T.™ stands for biggest, meatiest, tastiest.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/italian-bmt.webp"
+  },
+  {
+    "id": 36,
+    "title": "BBQ Chicken Strips",
+    "category": "sandwich",
+    "description": "The New BBQ Chicken Sandwich consist of tender chicken strips paired with sweet and tangy St.louis style BBQ sauce, fresh lettuce,tomatoes, red onions and pickles on your choice of toasted bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/BBQ-ChickenL.webp"
+  },
+  {
+    "id": 37,
+    "title": "Chicken Teriyaki",
+    "category": "sandwich",
+    "description": "An Asian classic, is made with tender chicken pieces dressed lightly with teriyaki sauce, served hot and topped with your choice of fresh vegetables and condiments on freshly baked bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/teriyaki-chicken.webp"
+  },
+  {
+    "id": 38,
+    "title": "Bulgogi Chicken",
+    "category": "sandwich",
+    "description": "Switch out your usual cheese with Mozzarella to get that K-fry stretch! Korean flavours of Bulgogi, enveloped in stretchy Mozzarella - a sub combination out of this world.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Bulgogi-Chicken-Sub.webp"
+  },
+  {
+    "id": 39,
+    "title": "Roasted Chicken",
+    "category": "sandwich",
+    "description": "Feel peckish for chicken? Then try our Oven Roasted Chicken Breast. A tender, boneless chicken breast patty roasted to perfection, with your choice of fresh vegetables and condiments is served on freshly baked bread. Just like mom used to make.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/roasted-chicken.webp"
+  },
+  {
+    "id": 40,
+    "title": "Seafood Sensation",
+    "category": "sandwich",
+    "description": "Sweet, tender chunks of seafood blended with creamy light mayonnaise to make a delightfully delicious sub, served with your choice of vegetables & condiments on freshly baked bread",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Seafood-Sensation.webp"
+  },
+  {
+    "id": 41,
+    "title": "Egg Mayo",
+    "category": "sandwich",
+    "description": "A simple recipe anyone will love with a thick spread of chopped up boiled egg mixed with creamy rich mayonnaise.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Egg-mayo.webp"
+  },
+  {
+    "id": 42,
+    "title": "BBQ Chicken",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/BBQ-Chicken-Salad.png"
+  },
+  {
+    "id": 43,
+    "title": "Chicken Slice",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Chicken-Slice-Salad.png"
+  },
+  {
+    "id": 44,
+    "title": "Fish & Chips",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/fish-and-chips.png"
+  },
+  {
+    "id": 45,
+    "title": "Italian B.M.T.",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Italian-BMT-Salad.png"
+  },
+  {
+    "id": 46,
+    "title": "Tuna Mayo",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Tuna-Mayo-Salad.png"
+  },
+  {
+    "id": 47,
+    "title": "Roast Beef",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/Roast-Beef-Salad-2.png"
+  },
+  {
+    "id": 48,
+    "title": "Roasted Chicken",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Roast-Chicken-Salad.png"
+  },
+  {
+    "id": 49,
+    "title": "Spicy Italian",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Spicy-Italian-Salad-1536x1024.png"
+  },
+  {
+    "id": 50,
+    "title": "Steak & Cheese",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Steak-and-Cheese-Salad.png"
+  },
+  {
+    "id": 51,
+    "title": "Veggie Delight",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Veggie-Delite-Salad.png"
+  }
+]
