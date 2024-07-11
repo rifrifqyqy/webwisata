@@ -3,12 +3,13 @@
     <template #default="{ item, index, open }">
       <UButton
         variant="ghost"
-        class="group flex justify-between border-2 border-yellow-500 transition-all duration-300 hover:bg-yellow-500 max-sm:border"
+        class="hover:bg-dark-100 group flex justify-between bg-white shadow-sm transition-all duration-300"
         :ui="{ rounded: 'rounded-none', padding: {} }"
-        :class="[open && 'bg-yellow-500']"
+        :class="[open && 'bg-dark-100']"
       >
         <span
-          class="truncate px-4 py-2 text-xl text-green-700 group-hover:text-green-600 max-sm:px-2 max-sm:py-0 max-sm:text-[16px]"
+          class="text-dark-50 truncate px-4 py-2 text-xl group-hover:text-white max-sm:px-2 max-sm:py-0 max-sm:text-[16px]"
+          :class="[open && 'text-white']"
         >
           {{ item.label }}</span
         >
@@ -16,8 +17,8 @@
         <template #trailing>
           <UIcon
             name="i-heroicons-chevron-down-20-solid"
-            class="h-5 w-5 transform text-green-600 transition-transform duration-200 min-w-6"
-            :class="[open && 'rotate-180']"
+            class="text-dark-50 h-5 w-5 min-w-6 transform transition-transform duration-200 group-hover:text-white"
+            :class="[open && 'rotate-180 text-white']"
           />
         </template>
       </UButton>
@@ -35,7 +36,7 @@
 <script setup>
 const items = [
   {
-    label: "Can I Customize My Sandwich?",
+    label: "Bagaimana saya memesan tiket Wisata?",
 
     content:
       "Yes! Your friendly sandwich artist will make your freshly made sandwich however you want it. In fact, there are over 2 million sandwich varieties available from our menu choices, so you can have your Subway® sandwich with any combination of ingredients we offer. Consider those varieties as 2 million delicious sandwiches—all with your name on them.",

@@ -115,7 +115,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .swiper {
   @apply h-full overflow-hidden px-12 max-sm:w-[300px] md:w-[600px] lg:w-[800px] xl:w-[1200px];
 }
@@ -154,15 +154,5 @@ export default {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply bg-opacity-80;
-}
-
-.swiper-pagination {
-  @apply mb-[-50px] flex items-center justify-center text-lime-600;
-  .swiper-pagination-bullet {
-    @apply bg-green-600 opacity-30 transition-all duration-500 ease-in-out;
-  }
-  .swiper-pagination-bullet-active {
-    @apply h-3 w-8 rounded-lg bg-green-600 opacity-100;
-  }
 }
 </style>

@@ -1,0 +1,9 @@
+.swiper-pagination2 {
+  @apply z-50 absolute flex items-center justify-center;
+  .swiper-pagination-bullet {
+    @apply bg-amber-100 opacity-30 transition-all duration-500 ease-in-out;
+  }
+  .swiper-pagination-bullet-active {
+    @apply h-3 w-8 rounded-lg bg-amber-500 opacity-100;
+  }
+}

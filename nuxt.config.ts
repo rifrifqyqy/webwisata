@@ -4,11 +4,11 @@ export default defineNuxtConfig({
     assets: "/<rootDir>/",
   },
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "nuxt-marquee"],
   css: ["~/assets/css/tailwind.css"],
   app: {
     head: {
-      title: "Nuxt Subway",
+      title: "Nuxt Touravel",
       meta: [
         {
           name: "description",

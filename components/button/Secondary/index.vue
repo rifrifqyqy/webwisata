@@ -18,7 +18,7 @@ const props = defineProps({
 
 const buttonClasses = computed(() => {
   return twMerge(
-    "rounded-md border border-green-600 bg-white px-5 py-2 font-semibold text-green-600 hover:opacity-80 max-md:px-3 max-md:py-1 max-md:text-[14px]",
+    " border border-green-600 bg-white px-5 py-2 font-semibold text-green-600 hover:opacity-80 max-md:px-3 max-md:py-1 max-md:text-[14px]",
     props.styled,
   );
 });

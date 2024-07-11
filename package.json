@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/ui": "^2.16.0",
     "nuxt": "^3.11.2",
+    "nuxt-marquee": "^1.0.4",
     "swiper": "^11.1.4",
     "tailwind-merge": "^2.3.0",
     "vue": "^3.4.27",
