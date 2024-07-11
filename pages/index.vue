@@ -101,7 +101,9 @@ const marqueeimg = [
     img: "https://upload.wikimedia.org/wikipedia/id/thumb/d/d4/Trans_Studio_logo_2011.svg/1200px-Trans_Studio_logo_2011.svg.png",
   },
 ];
-const { data, error } = useFetch("http://localhost:3000/api/destination");
+
+const apiUrl = "/api/destination";
+const { data, error } = await useFetch(apiUrl);
 
 if (error.value) {
   console.error("Error fetching data:", error.value);
