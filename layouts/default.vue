@@ -23,7 +23,10 @@
             >
           </li>
           <li>
-            <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
+            <NuxtLink to="/about" :class="styledMenuNav">Promo</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about" :class="styledMenuNav">Artikel</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/about" :class="[styledMenuNav]"

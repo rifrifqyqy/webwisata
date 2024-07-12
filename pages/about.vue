@@ -133,9 +133,7 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "about",
-});
+
 </script>
 <style scoped>
 .hide-scrollbar {

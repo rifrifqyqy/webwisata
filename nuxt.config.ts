@@ -20,6 +20,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/icon?family=Material+Icons",
         },
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/images/favicon.svg",
+        },
       ],
     },
   },

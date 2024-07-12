@@ -29,7 +29,7 @@
           <p class="text-light-400 text-xl">
             Explore the whole world and enjoy the beauty
           </p>
-          <ButtonPrimary styled="bg-mainn-50 text-lg mt-4 w-fit"
+          <ButtonPrimary to="/destinasi"styled="bg-mainn-50 text-lg mt-4 w-fit"
             >Lihat Destinasi Wisata</ButtonPrimary
           >
         </div>

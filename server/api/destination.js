@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
         {
           id: 1,
           name: "Individu",
-          pricepkg: 200000,
+          pricepkg: 2000000,
         },
         {
           id: 2,
@@ -25,15 +25,15 @@ export default defineEventHandler((event) => {
         {
           id: 3,
           name: "Keluarga",
-          pricepkg: 1200000,
+          pricepkg: 12000000,
         },
         {
           id: 4,
           name: "Reuni",
-          pricepkg: 3000000,
+          pricepkg: 30000000,
         },
       ],
-      maps: "https://goo.gl/maps/JY5J1c5g1Y92",
+      maps: "https://maps.app.goo.gl/zdxFcABwbAmdc7ZX6",
       location: "Bali",
     },
     {
@@ -49,22 +49,22 @@ export default defineEventHandler((event) => {
         {
           id: 1,
           name: "Individu",
-          pricepkg: 10.0,
+          pricepkg: 120000,
         },
         {
           id: 2,
           name: "Group",
-          pricepkg: 70.0,
+          pricepkg: 250000,
         },
         {
           id: 3,
           name: "Keluarga",
-          pricepkg: 120.0,
+          pricepkg: 700000,
         },
         {
           id: 4,
           name: "Reuni",
-          pricepkg: 200.0,
+          pricepkg: 2100000,
         },
       ],
       maps: "https://goo.gl/maps/xQ5j3Ys1VZ92",
@@ -83,25 +83,25 @@ export default defineEventHandler((event) => {
         {
           id: 1,
           name: "Individu",
-          pricepkg: 10.0,
+          pricepkg: 1500000,
         },
         {
           id: 2,
           name: "Group",
-          pricepkg: 70.0,
+          pricepkg: 2200000,
         },
         {
           id: 3,
           name: "Keluarga",
-          pricepkg: 120.0,
+          pricepkg: 5800000,
         },
         {
           id: 4,
           name: "Reuni",
-          pricepkg: 200.0,
+          pricepkg: 10500000,
         },
       ],
-      maps: "https://goo.gl/maps/yQ3s2X5v1W92",
+      maps: "https://maps.app.goo.gl/YDEY9G19hLx1tf6E9",
       location: "Bali",
     },
     {

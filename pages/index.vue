@@ -31,11 +31,13 @@
         Destinasi wisata dengan beragam spot foto menakjubkan.
       </h1>
       <p class="text-dark-200">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
-        officia molestias placeat rerum ab sapiente quod iure, commodi vero
-        tenetur?
+        Temukan destinasi wisata dengan spot foto menakjubkan yang sempurna
+        untuk mempercantik feed media sosial Anda. Dari pemandangan alam yang
+        memukau hingga arsitektur unik dan seni lokal yang instagramable, tempat
+        ini ideal untuk pecinta fotografi. Bawa kamera Anda dan nikmati momen
+        berharga di berbagai spot luar biasa ini.
       </p>
-      <ButtonPrimary styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
+      <ButtonPrimary to="/destinasi" styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
         >Lihat Destinasi</ButtonPrimary
       >
     </div>
@@ -51,15 +53,18 @@
         :key="index"
         :image="item.thumb"
         :title="item.title"
+        :desc="item.description"
         :rating="item.rating"
         :price="item.lowestPrice"
         :location="item.location"
+        :maps="item.maps"
+        :to="`/destinasi/${item.id}`"
       />
     </div>
   </section>
 
   <section class="mt-16 flex flex-col gap-8">
-    <h1 class="styled h1">Tou Tour FAQ</h1>
+    <h1 class="styled h1">Frequently Asked Questions</h1>
     <HomeFaqAccordion />
   </section>
 </template>

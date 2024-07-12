@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <NuxtLink :to="to">
     <button :class="[styledButton]">
       <slot />
     </button>
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -13,6 +13,7 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  to: {},
 });
 
 const styledButton = computed(() => {
