@@ -11,26 +11,27 @@ export default defineEventHandler((event) => {
         "Pantai indah dengan pasir putih dan ombak yang cocok untuk berselancar.",
       category: "pantai",
       rating: 8,
-      price: [
+      paketwisata: [
         {
           id: 1,
-          name: "Individu",
-          pricepkg: 2000000,
+          name: "Transportasi",
+          price: 1200000,
+          imageUrl:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
         },
         {
           id: 2,
-          name: "Group",
-          pricepkg: 5000000,
+          name: "Penginapan",
+          price: 1000000,
+          imageUrl:
+            "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
         },
         {
           id: 3,
-          name: "Keluarga",
-          pricepkg: 12000000,
-        },
-        {
-          id: 4,
-          name: "Reuni",
-          pricepkg: 30000000,
+          name: "Makanan",
+          price: 500000,
+          imageUrl:
+            "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
         },
       ],
       maps: "https://maps.app.goo.gl/zdxFcABwbAmdc7ZX6",
@@ -45,26 +46,27 @@ export default defineEventHandler((event) => {
         "Gunung berapi yang terkenal dengan pemandangan matahari terbit yang spektakuler.",
       category: "gunung",
       rating: 8.8,
-      price: [
+      paketwisata: [
         {
           id: 1,
-          name: "Individu",
-          pricepkg: 120000,
+          name: "Transportasi",
+          price: 300000,
+          imageUrl:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
         },
         {
           id: 2,
-          name: "Group",
-          pricepkg: 250000,
+          name: "Penginapan",
+          price: 500000,
+          imageUrl:
+            "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
         },
         {
           id: 3,
-          name: "Keluarga",
-          pricepkg: 700000,
-        },
-        {
-          id: 4,
-          name: "Reuni",
-          pricepkg: 2100000,
+          name: "Makanan",
+          price: 200000,
+          imageUrl:
+            "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
         },
       ],
       maps: "https://goo.gl/maps/xQ5j3Ys1VZ92",
@@ -79,26 +81,27 @@ export default defineEventHandler((event) => {
         "Resort mewah dengan pemandangan laut dan fasilitas lengkap.",
       category: "resort",
       rating: 8.8,
-      price: [
+      paketwisata: [
         {
           id: 1,
-          name: "Individu",
-          pricepkg: 1500000,
+          name: "Transportasi",
+          price: 300000,
+          imageUrl:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
         },
         {
           id: 2,
-          name: "Group",
-          pricepkg: 2200000,
+          name: "Penginapan",
+          price: 500000,
+          imageUrl:
+            "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
         },
         {
           id: 3,
-          name: "Keluarga",
-          pricepkg: 5800000,
-        },
-        {
-          id: 4,
-          name: "Reuni",
-          pricepkg: 10500000,
+          name: "Makanan",
+          price: 200000,
+          imageUrl:
+            "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
         },
       ],
       maps: "https://maps.app.goo.gl/YDEY9G19hLx1tf6E9",
@@ -112,26 +115,27 @@ export default defineEventHandler((event) => {
       description: "Museum yang menampilkan sejarah dan budaya Indonesia.",
       category: "museum",
       rating: 8.8,
-      price: [
+      paketwisata: [
         {
           id: 1,
-          name: "Individu",
-          pricepkg: 10.0,
+          name: "Transportasi",
+          price: 300000,
+          imageUrl:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
         },
         {
           id: 2,
-          name: "Group",
-          pricepkg: 70.0,
+          name: "Penginapan",
+          price: 500000,
+          imageUrl:
+            "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
         },
         {
           id: 3,
-          name: "Keluarga",
-          pricepkg: 120.0,
-        },
-        {
-          id: 4,
-          name: "Reuni",
-          pricepkg: 200.0,
+          name: "Makanan",
+          price: 200000,
+          imageUrl:
+            "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
         },
       ],
       maps: "https://goo.gl/maps/zQ4r2X5s3X92",
@@ -145,26 +149,27 @@ export default defineEventHandler((event) => {
       description: "Restoran terkenal dengan hidangan sate yang lezat.",
       category: "restaurant",
       rating: 8.8,
-      price: [
+      paketwisata: [
         {
           id: 1,
-          name: "Individu",
-          pricepkg: 10.0,
+          name: "Transportasi",
+          price: 300000,
+          imageUrl:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
         },
         {
           id: 2,
-          name: "Group",
-          pricepkg: 70.0,
+          name: "Penginapan",
+          price: 500000,
+          imageUrl:
+            "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
         },
         {
           id: 3,
-          name: "Keluarga",
-          pricepkg: 120.0,
-        },
-        {
-          id: 4,
-          name: "Reuni",
-          pricepkg: 200.0,
+          name: "Makanan",
+          price: 200000,
+          imageUrl:
+            "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
         },
       ],
       maps: "https://goo.gl/maps/aQ2r5Xs6Yz92",

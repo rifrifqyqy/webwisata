@@ -18,18 +18,18 @@
           </div>
         </NuxtLink>
       </div>
-      <article class="header">
+      <article class="header" :class="{ 'pb-2': !showPrice }">
         <div class="body">
           <h1>{{ title }}</h1>
           <p>{{ desc }}</p>
         </div>
       </article>
-      <div class="price">
+      <div v-if="showPrice" class="price">
         <h1>{{ price }}</h1>
       </div>
     </section>
 
-    <div class="footer">
+    <div v-if="showButton" class="footer">
       <NuxtLink :to="to" class="w-full">
         <ButtonPrimary styled="bg-mainn-50 rounded-md">
           Lihat Detail
@@ -41,27 +41,21 @@
 
 <script setup>
 const props = defineProps({
-  image: {
-    type: String,
+  image: String,
+  title: String,
+  rating: Number,
+  location: String,
+  price: String,
+  to: Object,
+  desc: String,
+  maps: String,
+  showButton: {
+    type: Boolean,
+    default: true,
   },
-  title: {
-    type: String,
-  },
-  rating: {
-    type: Number,
-  },
-  location: {
-    type: String,
-  },
-  price: {
-    type: String,
-  },
-  to: {},
-  desc: {
-    type: String,
-  },
-  maps: {
-    type: String,
+  showPrice: {
+    type: Boolean,
+    default: true,
   },
 });
 </script>
@@ -81,7 +75,7 @@ const props = defineProps({
     }
   }
   .price {
-    @apply mx-2 text-xl font-bold border-t pt-2;
+    @apply mx-2 border-t pt-2 text-xl font-bold;
   }
   .body {
     @apply min-w-fit max-w-min;

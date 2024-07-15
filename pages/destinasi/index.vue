@@ -1,5 +1,5 @@
 <template>
-  <div>Destinasi</div>
+  <div class="grid" :class="anj">Destinasi</div>
 </template>
 
 <script setup>

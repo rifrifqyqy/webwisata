@@ -37,7 +37,9 @@
         ini ideal untuk pecinta fotografi. Bawa kamera Anda dan nikmati momen
         berharga di berbagai spot luar biasa ini.
       </p>
-      <ButtonPrimary to="/destinasi" styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
+      <ButtonPrimary
+        to="/destinasi"
+        styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
         >Lihat Destinasi</ButtonPrimary
       >
     </div>
@@ -67,10 +69,69 @@
     <h1 class="styled h1">Frequently Asked Questions</h1>
     <HomeFaqAccordion />
   </section>
+  <section>
+    <div class="container mx-auto p-4 hidden">
+      <h1 class="mb-4 text-2xl font-bold">
+        Perhitungan Biaya Transportasi dan Paket Wisata
+      </h1>
+      <form @submit.prevent="calculateTotal">
+        <div class="mb-4">
+          <label for="transport" class="block text-sm font-medium text-gray-700"
+            >Transportasi</label
+          >
+          <select
+            v-model="selectedTransport"
+            id="transport"
+            class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+          >
+            <option
+              v-for="(price, vehicle) in transportOptions"
+              :key="vehicle"
+              :value="price"
+            >
+              {{ vehicle }} - Rp {{ price.toLocaleString() }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="tour" class="block text-sm font-medium text-gray-700"
+            >Paket Wisata</label
+          >
+          <select
+            v-model="selectedTour"
+            class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+          >
+            <option
+              v-for="(price, tour) in tourOptions"
+              :key="tour"
+              :value="price"
+            >
+              {{ tour }} - Rp {{ price.toLocaleString() }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <button
+            type="submit"
+            class="w-full rounded bg-blue-500 px-4 py-2 text-white"
+          >
+            Hitung Total
+          </button>
+        </div>
+        <div v-if="totalCost !== null" class="mt-4 rounded bg-green-100 p-4">
+          <h2 class="text-xl font-bold">
+            Total Biaya: Rp {{ totalCost.toLocaleString() }}
+          </h2>
+        </div>
+      </form>
+    </div>
+  </section>
+  
 </template>
 
 <script setup>
 import { formatRupiah } from "@/utils/formatCurrency";
+import { ref } from "vue";
 const styled = "px-24";
 const marqueeimg = [
   {
@@ -117,7 +178,7 @@ if (error.value) {
 const processedData = computed(() => {
   if (data.value) {
     return data.value.map((item) => {
-      const lowestPrice = Math.min(...item.price.map((p) => p.pricepkg));
+      const lowestPrice = Math.min(...item.paketwisata.map((p) => p.price));
       return {
         ...item,
         lowestPrice: formatRupiah(lowestPrice),
@@ -126,6 +187,25 @@ const processedData = computed(() => {
   }
   return [];
 });
+
+const transportOptions = {
+  Mobil: 500000,
+  Motor: 100000,
+  Kereta: 200000,
+};
+
+const tourOptions = {
+  Perorang: 200000,
+  Grup: 1500000,
+};
+
+const selectedTransport = ref(0);
+const selectedTour = ref(0);
+const totalCost = ref(null);
+
+const calculateTotal = () => {
+  totalCost.value = selectedTransport.value + selectedTour.value;
+};
 </script>
 
 <style scoped>
