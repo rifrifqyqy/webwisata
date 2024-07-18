@@ -107,7 +107,7 @@
       </buttonPrimary>
     </nav>
 
-    <div class="mx-24 max-md:mx-4">
+    <div class="mx-24 max-md:4">
       <slot />
     </div>
 

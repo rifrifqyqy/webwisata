@@ -1,132 +1,136 @@
 <template>
-  <HomeCarouselTravel />
-  <section class="mt-16">
-    <NuxtMarquee
-      :gradient="true"
-      gradient-color="#f7f7f7"
-      auto-fill
-      class="flex"
-      :loop="0"
-    >
-      <div v-for="sponsor in marqueeimg" :key="sponsor.id" class="mx-8">
-        <img
-          :src="sponsor.img"
-          alt=""
-          class="h-16 grayscale transition-all duration-300 hover:grayscale-0"
+  <section>
+    <HomeCarouselTravel />
+    <section class="mt-16">
+      <NuxtMarquee
+        :gradient="true"
+        gradient-color="#f7f7f7"
+        auto-fill
+        class="flex"
+        :loop="0"
+      >
+        <div v-for="sponsor in marqueeimg" :key="sponsor.id" class="mx-8">
+          <img
+            :src="sponsor.img"
+            alt=""
+            class="h-16 grayscale transition-all duration-300 hover:grayscale-0"
+          />
+        </div>
+      </NuxtMarquee>
+    </section>
+    <section class="mt-12 grid grid-cols-2 text-dark-50">
+      <div class="">
+        <img src="/images/photographer.png" alt="" class="mx-auto w-[70%]" />
+      </div>
+      <div class="my-auto mr-12">
+        <p
+          class="w-fit rounded-full bg-seconds-300 px-4 py-1 text-xs font-semibold uppercase text-seconds-50"
+        >
+          photography
+        </p>
+        <h1 class="text-4xl font-semibold leading-normal">
+          Destinasi wisata dengan beragam spot foto menakjubkan.
+        </h1>
+        <p class="text-dark-200">
+          Temukan destinasi wisata dengan spot foto menakjubkan yang sempurna
+          untuk mempercantik feed media sosial Anda. Dari pemandangan alam yang
+          memukau hingga arsitektur unik dan seni lokal yang instagramable,
+          tempat ini ideal untuk pecinta fotografi. Bawa kamera Anda dan nikmati
+          momen berharga di berbagai spot luar biasa ini.
+        </p>
+        <ButtonPrimary
+          to="/destinasi"
+          styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
+          >Lihat Destinasi</ButtonPrimary
+        >
+      </div>
+    </section>
+    <section class="mt-16 flex flex-col gap-8">
+      <div class="ml-2">
+        <h1 class="text-[32px] font-semibold">Tempat Wisata</h1>
+        <p class="text-dark-200">Berbagai tempat wisata di indonesia</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <CardTravel
+          v-for="(item, index) in processedData.slice(0, 4)"
+          :key="index"
+          :image="item.thumb"
+          :title="item.title"
+          :desc="item.description"
+          :rating="item.rating"
+          :price="item.lowestPrice"
+          :location="item.location"
+          :maps="item.maps"
+          :to="`/destinasi/${item.id}`"
         />
       </div>
-    </NuxtMarquee>
-  </section>
-  <section class="mt-12 grid grid-cols-2 text-dark-50">
-    <div class="">
-      <img src="/images/photographer.png" alt="" class="mx-auto w-[70%]" />
-    </div>
-    <div class="my-auto mr-12">
-      <p
-        class="w-fit rounded-full bg-seconds-300 px-4 py-1 text-xs font-semibold uppercase text-seconds-50"
-      >
-        photography
-      </p>
-      <h1 class="text-4xl font-semibold leading-normal">
-        Destinasi wisata dengan beragam spot foto menakjubkan.
-      </h1>
-      <p class="text-dark-200">
-        Temukan destinasi wisata dengan spot foto menakjubkan yang sempurna
-        untuk mempercantik feed media sosial Anda. Dari pemandangan alam yang
-        memukau hingga arsitektur unik dan seni lokal yang instagramable, tempat
-        ini ideal untuk pecinta fotografi. Bawa kamera Anda dan nikmati momen
-        berharga di berbagai spot luar biasa ini.
-      </p>
-      <ButtonPrimary
-        to="/destinasi"
-        styled="bg-mainn-50 text-lg mt-4 rounded-sm w-fit"
-        >Lihat Destinasi</ButtonPrimary
-      >
-    </div>
-  </section>
-  <section class="mt-16 flex flex-col gap-8">
-    <div class="ml-2">
-      <h1 class="text-[32px] font-semibold">Tempat Wisata</h1>
-      <p class="text-dark-200">Berbagai tempat wisata di indonesia</p>
-    </div>
-    <div class="flex flex-wrap justify-center gap-4">
-      <CardTravel
-        v-for="(item, index) in processedData.slice(0, 4)"
-        :key="index"
-        :image="item.thumb"
-        :title="item.title"
-        :desc="item.description"
-        :rating="item.rating"
-        :price="item.lowestPrice"
-        :location="item.location"
-        :maps="item.maps"
-        :to="`/destinasi/${item.id}`"
-      />
-    </div>
-  </section>
+    </section>
 
-  <section class="mt-16 flex flex-col gap-8">
-    <h1 class="styled h1">Frequently Asked Questions</h1>
-    <HomeFaqAccordion />
-  </section>
-  <section>
-    <div class="container mx-auto p-4 hidden">
-      <h1 class="mb-4 text-2xl font-bold">
-        Perhitungan Biaya Transportasi dan Paket Wisata
-      </h1>
-      <form @submit.prevent="calculateTotal">
-        <div class="mb-4">
-          <label for="transport" class="block text-sm font-medium text-gray-700"
-            >Transportasi</label
-          >
-          <select
-            v-model="selectedTransport"
-            id="transport"
-            class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-          >
-            <option
-              v-for="(price, vehicle) in transportOptions"
-              :key="vehicle"
-              :value="price"
+    <section class="mt-16 flex flex-col gap-8">
+      <h1 class="styled h1">Frequently Asked Questions</h1>
+      <HomeFaqAccordion />
+    </section>
+    <section>
+      <div class="container mx-auto hidden p-4">
+        <h1 class="mb-4 text-2xl font-bold">
+          Perhitungan Biaya Transportasi dan Paket Wisata
+        </h1>
+        <form @submit.prevent="calculateTotal">
+          <div class="mb-4">
+            <label
+              for="transport"
+              class="block text-sm font-medium text-gray-700"
+              >Transportasi</label
             >
-              {{ vehicle }} - Rp {{ price.toLocaleString() }}
-            </option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <label for="tour" class="block text-sm font-medium text-gray-700"
-            >Paket Wisata</label
-          >
-          <select
-            v-model="selectedTour"
-            class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-          >
-            <option
-              v-for="(price, tour) in tourOptions"
-              :key="tour"
-              :value="price"
+            <select
+              v-model="selectedTransport"
+              id="transport"
+              class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             >
-              {{ tour }} - Rp {{ price.toLocaleString() }}
-            </option>
-          </select>
-        </div>
-        <div class="mb-4">
-          <button
-            type="submit"
-            class="w-full rounded bg-blue-500 px-4 py-2 text-white"
-          >
-            Hitung Total
-          </button>
-        </div>
-        <div v-if="totalCost !== null" class="mt-4 rounded bg-green-100 p-4">
-          <h2 class="text-xl font-bold">
-            Total Biaya: Rp {{ totalCost.toLocaleString() }}
-          </h2>
-        </div>
-      </form>
-    </div>
+              <option
+                v-for="(price, vehicle) in transportOptions"
+                :key="vehicle"
+                :value="price"
+              >
+                {{ vehicle }} - Rp {{ price.toLocaleString() }}
+              </option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="tour" class="block text-sm font-medium text-gray-700"
+              >Paket Wisata</label
+            >
+            <select
+              v-model="selectedTour"
+              class="mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            >
+              <option
+                v-for="(price, tour) in tourOptions"
+                :key="tour"
+                :value="price"
+              >
+                {{ tour }} - Rp {{ price.toLocaleString() }}
+              </option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <button
+              type="submit"
+              class="w-full rounded bg-blue-500 px-4 py-2 text-white"
+            >
+              Hitung Total
+            </button>
+          </div>
+          <div v-if="totalCost !== null" class="mt-4 rounded bg-green-100 p-4">
+            <h2 class="text-xl font-bold">
+              Total Biaya: Rp {{ totalCost.toLocaleString() }}
+            </h2>
+          </div>
+        </form>
+      </div>
+    </section>
   </section>
-  
+  <img src="@/assets/images/resto1.jpg" alt="">
 </template>
 
 <script setup>
@@ -209,6 +213,15 @@ const calculateTotal = () => {
 </script>
 
 <style scoped>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
 nav {
   li {
     color: rgb(255, 255, 255);

@@ -20,7 +20,7 @@
       </div>
       <article class="header" :class="{ 'pb-2': !showPrice }">
         <div class="body">
-          <h1>{{ title }}</h1>
+          <h1>{{ props.title }}</h1>
           <p>{{ desc }}</p>
         </div>
       </article>
