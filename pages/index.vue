@@ -130,7 +130,6 @@
       </div>
     </section>
   </section>
-  <img src="@/assets/images/resto1.jpg" alt="">
 </template>
 
 <script setup>
