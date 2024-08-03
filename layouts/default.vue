@@ -107,7 +107,7 @@
       </buttonPrimary>
     </nav>
 
-    <div class="mx-24 max-md:4">
+    <div class="mx-24 max-md:4 min-h-dvh">
       <slot />
     </div>
 
@@ -207,9 +207,10 @@ const toggleNav = () => {
 </script>
 
 <style scoped>
-.router-link-exact-active {
+.router-link-active {
   @apply text-mainn-50;
 }
+
 .scrolled {
   @apply border-light-300 border-b bg-white;
 }

@@ -6,8 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxtjs/tailwindcss", "nuxt-marquee"],
   css: ["~/assets/css/tailwind.css"],
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
+  app: {  
     head: {
       title: "Nuxt Touravel",
       meta: [
