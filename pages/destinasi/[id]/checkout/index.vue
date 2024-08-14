@@ -5,6 +5,8 @@
       <form
         class="flex flex-col gap-6 border border-light-400 p-8"
         @submit.prevent="submitForm"
+        :ref="formCheckout"
+        id="checkoutForm"
       >
         <div class="form-wrap mb-4">
           <label
@@ -102,7 +104,7 @@
                 :value="option.id"
                 @change="handlePaketChange($event, option)"
                 class="h-20 w-full cursor-pointer appearance-none rounded-sm checked:border-transparent focus:outline-none"
-                id="paketform"
+                :id="`paketform`"
               />
 
               <div
@@ -118,13 +120,10 @@
                     <img
                       :src="option.imageUrl"
                       alt=""
-                      class="w-[42px] rounded-md object-cover object-left"
+                      class="w-[2.625rem] rounded-md object-cover object-left"
                     />
-                    <h1>
-                      {{ option.name }}
-                    </h1>
+                    <h1>{{ option.name }}</h1>
                   </div>
-
                   <p class="font-semibold">
                     {{ formatCurrency(option.price) }}
                   </p>
@@ -178,9 +177,6 @@
             <p class="text-dark-50">Contoh: namaanda@gmail.com</p>
           </div>
         </div>
-        <button type="submit" class="bg-blue-500 px-4 hidden py-2 text-white">
-          Submit
-        </button>
       </form>
     </div>
 
@@ -254,14 +250,33 @@
         >
           {{ totalBill }}
         </h1>
+
+        <button
+          type="submit"
+          @click="submitButton"
+          class="mt-8 w-full bg-mainn-50 px-4 py-2 text-xl font-bold uppercase text-white"
+          form="checkoutForm"
+        >
+          Submit
+        </button>
       </section>
     </aside>
   </section>
+  <!-- modal -->
+  <Modal :isVisible="isModalVisible" :closeModal="closeModal" />
 </template>
 
 <script setup>
 import { ref } from "vue";
-
+// modal state
+const isModalVisible = ref(false);
+const closeModal = () => {
+  isModalVisible.value = false;
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 500);
+};
+// form state base
 const nama = ref("");
 const tanggalMulai = ref("");
 const tanggalSelesai = ref("");
@@ -271,34 +286,13 @@ const jumlahPeserta = ref(1);
 const paket = ref([]);
 const hargaPaket = ref(0);
 const data = useAttrs().destination;
-
+const formCheckout = ref(null);
+// form style variable
 const formInput =
   "border-2  border-transparent border-b-light-400 p-4 w-full placeholder:text-dark-300 text-black";
 const formBorder =
   "col-span-2 outline-none transition-all focus:border-2 focus:border-mainn-50 focus:bg-transparent";
-const paketOptions = [
-  {
-    id: 1,
-    name: "Penginapan",
-    price: 500000,
-    imageUrl:
-      "https://www.theriver.asia/wp-content/uploads/2020/01/pngkey.com-airbnb-logo-png-605967.png",
-  },
-  {
-    id: 2,
-    name: "Transportasi",
-    price: 300000,
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/768px-AirAsia_New_Logo.svg.png",
-  },
-  {
-    id: 3,
-    name: "Makanan",
-    price: 200000,
-    imageUrl:
-      "https://desty-upload-indonesia.oss-ap-southeast-5.aliyuncs.com/desty-page/a2404b17d6564e5d8a032f4fdfdeff58.png",
-  },
-];
+
 //fungsi input noponsel
 const validateNumber = (event) => {
   const value = event.target.value.replace(/\D/g, "");
@@ -333,6 +327,15 @@ const handlePaketChange = (e, selectedPaket) => {
     hargaPaket.value -= selectedPaket.price;
   }
 };
+// const handlePaketChange = (e, selectedPaket) => {
+//   const { value, checked } = e.target;
+
+//   if (checked) {
+//     hargaPaket.value += selectedPaket.price;
+//   } else {
+//     hargaPaket.value -= selectedPaket.price;
+//   }
+// };
 
 const calculateTotalDays = () => {
   const start = new Date(tanggalMulai.value);
@@ -351,17 +354,46 @@ const calculateTotalBill = () => {
 };
 
 const submitForm = () => {
-  // Handle form submission logic here
-  console.log("Form submitted", {
-    nama,
-    tanggalMulai,
-    tanggalSelesai,
-    jumlahPeserta,
-    paket,
-    hargaPaket,
-  });
-};
+  const paketString = paket.value.map((p) => p.name).join(", ");
+  // menghitung jumlah hari
+  const totalDaysValue = calculateTotalDays();
+  const totalBillValue = calculateTotalBill();
+  const payload = {
+    nama: nama.value,
+    tanggalMulai: tanggalMulai.value,
+    tanggalSelesai: tanggalSelesai.value,
+    jumlahPeserta: jumlahPeserta.value,
+    noponsel: noponsel.value,
+    emailuser: emailuser.value,
+    paket: paketString,
+    totalDays: totalDaysValue,
+    totalBill: totalBillValue,
+    hargaPaket: hargaPaket.value,
+  };
 
+  fetch("http://localhost:8080/jwdtp1/submit_form.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json", // Mengatur header konten ke JSON
+    },
+    body: JSON.stringify(payload), // Mengonversi objek ke format JSON
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Response from server:", data);
+      isModalVisible.value = true;
+    })
+    .catch((error) => {
+      console.error("Error during submission:", error);
+    });
+};
+// button submit
+
+const submitButton = () => {
+  if (formCheckout.value) {
+    formCheckout.value.submit();
+  }
+};
 const totalBill = computed(() =>
   hargaPaket.value > 0 && tanggalMulai.value && tanggalSelesai.value
     ? `Rp${calculateTotalBill().toLocaleString()}`
